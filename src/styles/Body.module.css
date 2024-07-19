@@ -1,0 +1,80 @@
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.Body {
+    display: flex;
+    flex : 2;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    width: 970px;
+    height: 45vh;
+    border-radius: 30px;
+    background-color:#D5E7F6;
+    
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.formField {
+    display: flex;
+    justify-content: center;
+}
+
+.stopwatch {    
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.wpm {
+    font-size: 50px;
+    color: white;
+}
+
+.cursor {
+    position: absolute;
+    z-index: 1;
+
+    animation: blink-effect 1s step-end infinite;
+    width: 2px;
+    height: 25px;
+    background-color: black;
+
+}
+
+.writing {
+    position: absolute;
+    z-index: 1;
+
+    width: 970px;
+    height: 45vh;
+    border-radius: 30px;
+    background-color: transparent;
+    border: none;
+    
+    color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.word {
+    font-size: 25px;
+    font-weight: 500;
+}
+
